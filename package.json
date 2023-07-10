@@ -1,13 +1,13 @@
 {
   "name": "pcstore",
   "version": "1.0.0",
-  "description": "",
+  "description": "PCStore",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js --exec babel-node"
+    "dev": "nodemon src/index.js --exec babel-node --ignore client"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gali1917",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1",
