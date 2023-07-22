@@ -1,0 +1,91 @@
+form {
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: black;
+  border-radius: 4px;
+  border: 1px solid rgb(85, 85, 85);
+  padding: 12px 24px;
+
+}
+.title-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    height: 40px;
+    width: 80px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    box-shadow: 2px -2px 4px;
+}
+button:hover{
+    box-shadow: 0px 0px 4px;
+    transform: translate(2px, -2px);
+    border: none;
+
+
+}
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 24px 0;
+}
+.form {
+  border-radius: 4px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.input-label {
+  margin: 4px;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-label input{
+  margin-left: 8px;
+}
+.form-control {
+  width: 174px;
+  padding: 0 4px;
+}
+.card-image-form{
+  position: relative;
+  width: 50%;
+  max-width: 290px;
+  margin: 0 auto;
+}
+.image-upload-form{
+  position: relative;
+  width: 100%;
+  margin: 8px 0;
+  padding-top: 56.25%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.img-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  object-fit: cover;
+}
+.div-input-image{
+  width: 300px;
+  margin: 0 auto;
+  
+}
+.input-image-form{
+  display: block;
+  width: 100%;
+  
+}
+.register{
+  text-align: end;
+}
