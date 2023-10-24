@@ -1,0 +1,46 @@
+header {
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: #005676;
+}
+a:hover{
+  color: white;
+
+}
+.logo{
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+
+}
+.logo h1{
+  text-align: center;
+}
+.logo h1:hover{
+  color: #005676;
+}
+.logo-img{
+  display: block;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+nav ul li {
+  margin: 8px;
+  padding: 8px;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  color: black;
+}
+nav ul li:hover {
+  background-color: #005676;
+}

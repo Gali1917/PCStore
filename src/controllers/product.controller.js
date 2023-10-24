@@ -22,7 +22,6 @@ export const createProducts = async (req, res, next) => {
 
     await newProduct.save();
 
-
     res.json(newProduct);
   } catch (error) {
     console.log(error);
@@ -30,8 +29,9 @@ export const createProducts = async (req, res, next) => {
   }
 };
 
-export const getProduct = (req, res) => {
-  res.json("get product");
+export const getProduct = async (req, res) => {
+  const product = await Product.findById(req.params.id);
+  res.json(product);
 };
 
 export const updateProducts = (req, res) => {

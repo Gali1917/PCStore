@@ -1,6 +1,20 @@
 import React from "react";
+import { BsCartPlus } from "react-icons/bs";
+import { useAuth } from "../../context/providers/AuthContext";
+import { useCart } from "../../context/providers/CartContext";
 
 const ProductCard = ({ product }) => {
+  const { isLoggedIn } = useAuth();
+  const { addToCart, isLoaddingCart } = useCart();
+
+  const handleAddToCart = async (productId) => {
+    try {
+      await addToCart(productId);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div>
       <div className="image-product-card">
@@ -18,7 +32,18 @@ const ProductCard = ({ product }) => {
         <p>{product.description}</p>
         <p>${product.price}</p>
         <div className="buttons-card">
-          <button className="secondary-button">Comprar</button>
+          {isLoggedIn ? (
+            <button
+              className="secondary-button"
+              onClick={() => {
+                handleAddToCart(product._id);
+              }}
+            >
+              Agregar <BsCartPlus />
+            </button>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </div>
